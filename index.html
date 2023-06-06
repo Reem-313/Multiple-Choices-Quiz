@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Multiple Choice</title>
+</head>
+
+<body>
+    <header>
+        <div class="containter">
+            <div class="nav">
+                <h1>Multiple Choices</h1>
+            </div>
+        </div>
+    </header>
+    <form id="quizMaker">
+        <div class="Aques">
+            <input class="Qtext" id="questionText" aria-label="Add question" "/>
+            <input type='button' value="New question" onclick="newQuestion()" /> 
+            
+        </div>
+
+        <input id="optionText" aria-label="options" />
+        Answer
+        <input type="checkbox" id="isAnswer" aria-label="Answer" />
+
+        <input type="button" value="new option" onclick="newOption()" />
+        
+
+    </form>
+
+    <form id="newQuiz">
+
+    </form>
+
+    <input type="button" value="Submit" onclick="checkAnswer()"/>
+    <div id="status"></div>
+    <script src="JS.js"></script>
+
+
+    
+</body>
+</html>
